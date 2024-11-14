@@ -1,0 +1,31 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# env files
+.env*
+
+# Terraform
+terraform/*
+
+# Docker
+docker-compose.yml
+docker-compose.override.yml
+Dockerfile
+.env

@@ -1,0 +1,64 @@
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $text-main;
+
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  font-style: normal;
+}
+
+@media screen and (min-width: 1025px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+.bg--base {
+  background-color: $white;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+.bg--base {
+  background-color: $white;
+}
+}
+
+.infinite-loading-container {
+  div {
+    font-family: 'Darumadrop One', sans-serif;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in-anime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.linkified {
+  color: $dark-blue !important;
+}
+
+@keyframes fade-in-anime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

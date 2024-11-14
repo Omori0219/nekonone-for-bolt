@@ -1,0 +1,54 @@
+.c-text {
+  color: $text-main;
+  text-decoration: none;
+
+  &--designed {
+    font-family: 'Darumadrop One', sans-serif;
+  }
+
+  &--middle {
+    font-size: $font-size-middle;
+    line-height: 2;
+  }
+
+  &--large {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+
+.c-button {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+
+  &:not(&--disabled):hover {
+    opacity: 0.7;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+  }
+
+  &--disabled {
+    box-shadow: none !important; // ボックスシャドウを消す
+    background-color: $bg-gray !important; // 非活性状態の背景色
+    color: $text-main !important; // 非活性状態のテキスト色
+    cursor: not-allowed !important; // カーソルを禁止マークに
+  }
+
+  &--main {
+    font-family: 'Darumadrop One', sans-serif;
+    color: $off-white;
+    font-size: 16px;
+    padding: 12px 40px;
+    border-radius: 12px;
+    width: fit-content;
+    background-color: $accent-color;
+  }
+}
+.c-sponsorBadge {
+  display: inline;
+  width: 24px;
+  height: 24px;
+  
+}
